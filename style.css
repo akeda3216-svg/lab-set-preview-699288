@@ -486,3 +486,11 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var
   .pg{width:160px;height:286px;margin-left:-80px}
   .pg .mk{transform:scale(.6667)}
 }
+.mk5 .mk-hero{padding:14px 14px 16px}
+.mk5 .mk-hero h4{font-size:21px}
+.mk-av{width:46px;height:46px}
+.mk-avs{padding-top:10px}
+.mk-tl{margin-top:6px}
+.mk-tl li{padding:3px 0 3px 12px}
+.mk5 .mk-sub{margin-top:4px;font-size:10.5px}
+.mk-line{bottom:12px;padding:10px}

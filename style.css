@@ -391,3 +391,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var
 .zero-s{margin:6px 0 4px;font-size:20px}
 .kv .yen small.mo{margin:0 8px 0 0}
 .kv .yen{margin-top:14px;font-size:clamp(44px,10vw,76px)}
+
+/* 2行表示（クリーニング業界特化型！を1行に収める） */
+.spec-t{font-size:clamp(18px,5.9vw,32px)}
+@media(min-width:860px){.spec-t{font-size:min(3.4vw,38px)}}

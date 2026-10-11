@@ -28,22 +28,21 @@
   /* 見積もりシミュレーター */
   var sim = document.getElementById('sim');
   if (sim) {
-    var P = { 1: 44670, 2: 53460, 3: 62250, 4: 71040, 5: 79830 };
+    var P = { 1: 44670, 2: 53460, 3: 62250, 4: 71040 };
     var FIT = {
       1: '個人事業・名刺代わり。会社名と対応エリア、連絡先。',
       2: 'トップ＋できる作業と対応地域。',
       3: '営業HPの最小構成（トップ・作業と地域・会社情報）。',
-      4: '営業HP＋施工例と報告のしかた。',
-      5: '営業HP 3ページ＋採用HP 2ページのセット。このサイトと同じ5ページ。'
+      4: '営業HP＋施工例と報告のしかた。'
     };
     var out = sim.querySelector('[data-out]'), fit = sim.querySelector('[data-fit]'), bs = sim.querySelectorAll('button');
     var set = function (n) {
-      out.innerHTML = P[n].toLocaleString('ja-JP') + '<small>円（税込）</small>';
+      out.innerHTML = P[n].toLocaleString('ja-JP') + '<small>円（税込・一括）</small>';
       fit.textContent = n + 'ページ：' + FIT[n];
       [].forEach.call(bs, function (b) { b.setAttribute('aria-pressed', b.dataset.n == n ? 'true' : 'false'); });
     };
     [].forEach.call(bs, function (b) { b.addEventListener('click', function () { set(+b.dataset.n); }); });
-    set(5);
+    set(4);
   }
 
   /* トップへ入る前の一動作（約4秒・SKIPあり）：ページが増えるたび金額が決まる */
@@ -52,7 +51,7 @@
   var pgs = kv.querySelectorAll('.pg'), yen = kv.querySelector('.yen b');
   var showFinal = function () {
     [].forEach.call(pgs, function (p) { p.classList.add('on'); });
-    yen.textContent = '79,830';
+    yen.textContent = '4,790';
   };
   var intro = document.getElementById('intro');
   var seen = false;

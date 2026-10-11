@@ -384,3 +384,10 @@ details p{margin-top:10px;font-size:15px}
 a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--coral);outline-offset:3px;border-radius:6px}
 .btn,.bar a,.menu-btn,.pgs button{min-height:44px}
 @media print{.bar,#intro,.kvband{display:none!important}}
+
+/* 制作費0円の強調 */
+.zero{display:inline-flex;align-items:baseline;gap:.45em;background:var(--yellow);color:var(--ink);font-weight:900;font-size:clamp(18px,5vw,26px);padding:.16em .7em .24em;border-radius:14px;border:3px solid var(--ink);box-shadow:6px 6px 0 var(--ink);transform:rotate(-2deg);margin-top:18px;white-space:nowrap}
+.zero b{font-family:var(--en);font-weight:400;font-size:2.7em;color:var(--coral);line-height:1;letter-spacing:.02em}
+.zero-s{margin:6px 0 4px;font-size:20px}
+.kv .yen small.mo{margin:0 8px 0 0}
+.kv .yen{margin-top:14px;font-size:clamp(44px,10vw,76px)}

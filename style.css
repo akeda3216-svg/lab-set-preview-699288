@@ -397,7 +397,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var
 @media(min-width:860px){.spec-t{font-size:min(3.4vw,38px)}}
 
 /* ---- トップページ見本（架空の会社・5パターン） ---- */
-.kv{--dx:min(46px,10.5vw)}
+.kv{--dx:min(54px,13.6vw)}
 .kv .stage{width:min(340px,88vw);height:min(262px,70vw);margin-top:6px}
 .pg{width:120px;height:215px;margin-left:-60px;border-radius:10px;overflow:hidden;background:#fff;background-image:none;box-shadow:0 8px 0 rgba(0,0,0,.22),0 0 0 2px #fff}
 .pg::after{display:none}
@@ -443,7 +443,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var
 
 .mk4{background:#ffd23f}
 .mk4 .mk-h{background:#ffd23f;border-bottom:2px solid #1b2330}
-.mk4 h4{font-size:25px;padding:18px 14px 10px}
+.mk4 h4{font-size:21px;padding:18px 14px 10px}
 .mk-map{display:block;width:calc(100% - 28px);margin:0 14px}
 .mk-badges{display:flex;gap:8px;padding:14px 14px 0}
 .mk-badges span{flex:1;background:#1b2330;color:#fff;border-radius:10px;padding:9px 6px;font-size:11px;font-weight:700;text-align:center;line-height:1.35}

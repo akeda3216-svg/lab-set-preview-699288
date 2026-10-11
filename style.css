@@ -470,3 +470,19 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var
 .mkfig figcaption b{font-size:15px;font-weight:900;color:var(--ink)}
 .mkfig .d{font-size:13px;line-height:1.7;color:var(--mute)}
 .mkfoot{font-size:13px;color:var(--mute);margin-top:4px}
+/* 見本の収まり調整・PCでは大きく */
+.mk1 .mk-hero{padding:14px 14px 15px}
+.mk1 .mk-hero h4{font-size:22px}
+.mk1 .mk-hero p{margin:7px 0 11px}
+.mk-photos{padding:10px 12px}
+.mk2 .mk-top{padding:14px 14px 4px}
+.mk2 .mk-top p{margin-top:4px}
+.mk-tb td{padding:6px 4px}
+.mk-note{padding-top:8px}
+.mk2 .mk-btn{margin-top:12px}
+@media(min-width:860px){
+  .kv{--dx:70px}
+  .kv .stage{width:440px;height:360px}
+  .pg{width:160px;height:286px;margin-left:-80px}
+  .pg .mk{transform:scale(.6667)}
+}

@@ -517,3 +517,10 @@ p,li,dd,.d{text-wrap:pretty}
   .receipt dd{border-top:0;padding:2px 0 8px;text-align:left;font-weight:700;color:var(--ink)}
   .ft small{font-size:12px}
 }
+
+/* 文節単位で改行（BudouXの<wbr>と組み合わせる） */
+body{word-break:keep-all;overflow-wrap:break-word;line-break:strict}
+.tbl th,.tbl td:first-child{white-space:nowrap}
+.tbl td,.tbl th{word-break:keep-all}
+td{text-wrap:pretty}
+.ft .nav a span,.nav a span{white-space:nowrap}

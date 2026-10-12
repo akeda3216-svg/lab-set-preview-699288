@@ -505,3 +505,15 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var
 .mk-cp p{font-size:11px;line-height:1.6;margin:7px 0 10px;color:#eef2ff}
 .mk-pills{display:flex;gap:5px;margin-top:11px}
 .mk-pills span{flex:1;text-align:center;font-size:9.5px;font-weight:700;color:#fff;background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.55);border-radius:99px;padding:5px 2px;white-space:nowrap}
+
+/* ---- 改行の整え（スマホ） ---- */
+body{line-break:strict}
+h1,h2,h3,h4,summary,.promise,.say,.stmt,.rcatch{text-wrap:balance}
+p,li,dd,.d{text-wrap:pretty}
+.promise{font-size:clamp(17px,4.5vw,24px)}
+@media(max-width:560px){
+  .receipt dl{grid-template-columns:1fr}
+  .receipt dt{border-top:1px solid var(--stone);padding:10px 0 0;font-size:12.5px}
+  .receipt dd{border-top:0;padding:2px 0 8px;text-align:left;font-weight:700;color:var(--ink)}
+  .ft small{font-size:12px}
+}
